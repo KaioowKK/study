@@ -1,6 +1,6 @@
 # Repository dedicated to study
-- [ ] VSCode
-- [ ] Git
+- [x] VSCode
+- [x] Git
 - [ ] HTML
 - [ ] CSS
 - [ ] Bootstrap 5
