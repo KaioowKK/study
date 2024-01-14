@@ -7,7 +7,3 @@
 - [ ] JavaScript
 - [ ] Node.JS
 - [ ] SQL
-
-# teste
-- 1
-- 2
