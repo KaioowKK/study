@@ -5,11 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="description" content="ALMOST A HIGH END CODER">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript e BOOSTELASTRAP">
     <meta name="author" content="Kaioow 30CM Mole">
     <!--All meta information goes inside the head section.-->
 
-    <base href="https://www.w3schools.com/" target="_blank">
     <!--The <base> element specifies the base URL and/or target for all relative URLs in a page-->
 
     <style>
@@ -38,7 +37,69 @@
       color: rgb(0, 0, 0)
       padding: 30px;
       text-align: left;
-    } 
+    }
+    {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
 
     </style>
     </head>
@@ -158,6 +219,33 @@
     <!--<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder-->
     <!--<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web-->
     <!--<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder-->
+
+
+        <h2>CSS Flexbox</h2>
+        
+        <header>
+          <h2>TITULO PAGINA</h2>
+        </header>
+        
+        <section>
+          <nav>
+            <ul>
+              <li><a href="#">MENU 1</a></li>
+              <li><a href="#">menu 2</a></li>
+              <li><a href="#">""3""</a></li>
+            </ul>
+          </nav>
+          
+          <article>
+            <h1>MANI 1</h1>
+            <p>textim</p>
+            <p>Você sabia que o piru foi inventado em 1866?</p>
+          </article>
+        </section>
+        
+        <footer>
+          <p>PARTE DE BAIXO</p>
+        </footer>
 
     </body>
 
