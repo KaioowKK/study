@@ -2,6 +2,12 @@
 <html>
 <body>
 
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:rgb(255, 0, 0);stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+      Hmmm se pa n suporta hein.
+      </svg>
+
     <h2>XVIDEOS CADASTRO DE ATORES PORNO</h2>
 
     <form action="/action_page.php" autocomplete="on">
@@ -111,8 +117,6 @@
 
     <br><br>
 
-    <input type="image" src="Images/img_submit.gif" alt="Submit" width="48" height="48">
-
     <!--
         
         <form action="/action_page.php" method="get" target="_blank">
@@ -122,8 +126,22 @@
         <input type="text" id="lname" name="lname"><br><br>
         <input type="submit" value="Submit using GET">
         <input type="submit" formmethod="post" value="Submit using POST">
-        --L
-    
+        -->
+
+    <canvas id="myCanvas" width="500" height="75" style="border:1px solid #d3d3d3;">
+        Browser de bosta e fods né kk.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("WELCOME TO THE PORN LIFE",10,50);
+        </script>
+
+    <br><br>
+
+    <input type="image" src="Images/img_submit.gif" alt="Submit" width="48" height="48">
+
     </form>
 
 
