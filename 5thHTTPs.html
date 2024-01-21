@@ -145,6 +145,43 @@
 
     <br><br>
 
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Africano</button>
+        <button onclick="makeSmall()">Japones</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="800">
+            <source src="solo1.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+      
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      
+      function makeBig() { 
+          myVideo.width = 1200; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 420; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 800; 
+      } 
+      </script> 
+
+    <br><br>
+
     <input type="image" src="Images/img_submit.gif" alt="Submit" width="48" height="48">
 
     </form>
@@ -160,6 +197,8 @@
     <!--    Ogg         .ogg            -->
     <!--    WebM        .webm           -->
     <!--    MP4 	    .mp4            -->
+
+    
 
 
 </body>

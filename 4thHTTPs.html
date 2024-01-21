@@ -182,26 +182,26 @@
     <button onclick="changeClasses()">Change all classes</button>
     
     <script>
-        function changeClasses() {
+        function changeClasses() 
+        {
             let spanClasses = document.getElementsByClassName("HIDDEN");
-            for (spanClass of spanClasses) {
+            for (spanClass of spanClasses) 
+            {
                 spanClass.innerHTML = "KAIANDRO"; 
             }
         }
-
-
-
-
     
     let changed = false; 
 
-    function displayResult() {
-      if (changed) {
+    function displayResult() 
+    {
+      if (changed)
+       {
         document.getElementById("myHeader").innerHTML = "Hello World!";
         changed = false;
-
-      } else {
-
+      } 
+      else 
+      {
         document.getElementById("myHeader").innerHTML = "Voce curte dar a bunda :3 :3 :3";
         changed = true;
 
