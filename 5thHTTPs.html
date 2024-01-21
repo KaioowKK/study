@@ -277,7 +277,7 @@
 
     <br><br>
 
-    
+
     <p>O Maluco Conta: <output id="result"></output></p>
     <button onclick="startWorker()">Elefante de Elite</button> 
     <button onclick="stopWorker()">Composite Bowman</button>
@@ -304,8 +304,21 @@
       w.terminate();
       w = undefined;
     }
-</script>
+    </script>
 
+    <h1>Getting server updates</h1>
+    <div id="result"></div>
+
+    <script>
+    if(typeof(EventSource) !== "undefined") {
+    var source = new EventSource("demo_sse.php");
+    source.onmessage = function(event) {
+    document.getElementById("result").innerHTML += event.data + "<br>";
+    };
+    } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+    }
+    </script>
 
 </body>
 
