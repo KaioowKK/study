@@ -3,6 +3,33 @@
 <head>
     <title>Cadastro Ver 3.0</title>
     <link rel="stylesheet" href="css/stylesheet5th.css" alt="Error">
+
+    <style>
+    #div1, #div2 {
+      float: left;
+      width: 100px;
+      height: 70px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+    </style>
+
+    <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
       
 </head>
 <body>
@@ -232,6 +259,12 @@
         "<br>Longitude: " + position.coords.longitude;
       }
       </script>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="images/img_submit.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="70" height="70">
+    </div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
 </body>
