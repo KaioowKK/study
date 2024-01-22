@@ -15,3 +15,8 @@ p {
   /* .class         Selects all elements with class="intro"         */
   /* element.class  Selects only <p> elements with class="intro"    */
   /* *  	        Selects all elements                            */
+
+  /*    Three Ways to Insert CSS    */
+  /*    External CSS                */
+  /*    Internal CSS                */
+  /*    Inline CSS                  */
