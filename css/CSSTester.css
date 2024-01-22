@@ -22,3 +22,12 @@ p {
   /*    Inline CSS                  */
 
   /*    BRUV                  */
+
+  body {
+    background-image: url("images/dosgrey.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+  }
+
+  /*https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment*/
