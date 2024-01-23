@@ -46,14 +46,19 @@ p:hover, p:active {
 .app1title {
     color:aliceblue;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.800);
     padding: 10px;
-    border:3px solid rgb(255, 55, 55);
     color: rgb(55, 255, 55);
     border-radius: 10px;    
     box-sizing: border-box;
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
     margin-top: 3%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 1%;
+    z-index:2;
+
     
 }
 
