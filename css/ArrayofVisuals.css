@@ -24,7 +24,6 @@ p, a {
     text-align: justify;
     color:aliceblue;
     padding: 10px;
-    border:3px solid rgb(55, 182, 255);
     color: rgb(255, 255, 255);  
     box-sizing: border-box;
     max-width: 1000px;
@@ -112,8 +111,7 @@ ul {
     border-radius: 15px; 
     background: #3399ff;
     padding: 20px;
-    max-width: 300px;
-    margin: 0 auto;
+
 }
   
 ol li {
@@ -197,4 +195,22 @@ div.absolute {
 
 .facex {
     float: right;
+}
+
+.facey {
+    float: left;
+}
+
+.nav {
+    background-color: rgb(0, 0, 0); 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
