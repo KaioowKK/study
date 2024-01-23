@@ -46,10 +46,9 @@ p:hover, p:active {
 .app1title {
     color:aliceblue;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.800);
+    background-color: rgba(0, 0, 0, .999);
     padding: 10px;
-    color: rgb(55, 255, 55);
-    border-radius: 10px;    
+    color: rgb(55, 255, 55);   
     box-sizing: border-box;
     max-width: 100%;
     margin: 0 auto;
@@ -58,6 +57,8 @@ p:hover, p:active {
     position: sticky;
     top: 1%;
     z-index:2;
+    border:3px solid rgb(255, 255, 255);
+
 
     
 }
@@ -68,9 +69,6 @@ p:hover, p:active {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    outline-color: rgb(255, 55, 55);
-    outline-style: outset;
-    outline-width: 5px;
 }
 
 .font-effect-fire {
@@ -79,7 +77,7 @@ p:hover, p:active {
 }
 
 a:link, a:visited {
-    background-color: #f44336;
+    background-color: red;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -177,6 +175,21 @@ tr:hover {
 /*  initial	            Sets this property to its default value.                                */
 /*  inherit	            Inherits this property from its parent element.                         */
 
+div.absolute {
+    top: 80px;
+    width: 50px;
+    height: 35px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10.58%;
+    z-index:2;
+    background-color: rgba(0, 0, 0, 0.999);
+    color: rgb(55, 255, 55);  
+    box-sizing: border-box;
+    border-right:3px solid rgb(255, 255, 255);
+    border-bottom:3px solid rgb(255, 255, 255);
+    border-left:3px solid rgb(255, 255, 255);
+}
 
 
 
