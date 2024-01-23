@@ -217,13 +217,11 @@
 
     <br><br>
 
-    <embed width="100%" height="500px" src="snippet.html">
+    <embed width="100%" height="500px" src="Index.html">
 
     <br><br>
 
-    <iframe width="420" height="315"
-    src="https://www.youtube.com/watch?v=lRxRaZz3sGU?controls=1">
-    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lRxRaZz3sGU?si=nV0Tydh2XVHWQ8KL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <br><br>
 
@@ -245,6 +243,10 @@
 
     <br><br>
 
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
     <script>
       const x = document.getElementById("demo");
       
@@ -265,7 +267,7 @@
     <br><br>
 
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <img src="images/img_submit.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="70" height="70">
+    <img src="images/img_submit.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="70" height="700">
     </div>
 
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -278,33 +280,32 @@
     <br><br>
 
 
-    <p>O Maluco Conta: <output id="result"></output></p>
+    <p>O Maluco Conta: <output id="ANDER"></output></p>
     <button onclick="startWorker()">Elefante de Elite</button> 
     <button onclick="stopWorker()">Composite Bowman</button>
 
     <p><strong>Note:</strong> Se for net bosta n funfa</p>
 
     <script>
-    var w;
-
-    function startWorker() {
-      if(typeof(Worker) !== "undefined") {
-      if(typeof(w) == "undefined") {
-      w = new Worker("demo_workers.js");
-    }
-      w.onmessage = function(event) {
-      document.getElementById("result").innerHTML = event.data;
-    };
-      } else {
-      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
-    }
-    }
-
-    function stopWorker() { 
-      w.terminate();
-      w = undefined;
-    }
-    </script>
+      var w;
+      
+      function startWorker() {
+        if(typeof(Worker) !== "undefined") {
+          if(typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+          }
+          w.onmessage = function(event) {
+            document.getElementById("ANDER").innerHTML = event.data;
+          };
+        } else {
+          document.getElementById("ANDER").innerHTML = "Sorry, your browser does not support Web Workers...";
+        }
+      }
+      
+      function stopWorker() { 
+        w.terminate();
+      }
+      </script>
 
     <h1>Getting server updates</h1>
     <div id="result"></div>
