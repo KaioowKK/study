@@ -13,6 +13,7 @@ body {
     text-align: justify;
     letter-spacing: 2px;
     font-family: "Monaco";
+    font-style: italic;
 
 
 }
@@ -60,4 +61,9 @@ p {
     outline-color: rgb(255, 55, 55);
     outline-style: outset;
     outline-width: 5px;
+  }
+
+  font-effect-fire {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
   }
