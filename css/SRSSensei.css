@@ -88,3 +88,26 @@ p, a {
     text-shadow: 2px 2px rgb(0, 0, 0);
     text-decoration: none;
   }
+
+  ol {
+    background: #007bff4f;
+    padding: 20px;
+  }
+  
+  ul {
+    background: #007bff4f;
+    padding: 20px;
+  }
+  
+  ol li {
+    background: #007bff4f;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+  }
+  
+  ul li {
+    background: #007bff4f;
+    color: darkblue;
+    margin: 5px;
+  }
