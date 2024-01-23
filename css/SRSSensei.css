@@ -95,19 +95,19 @@ p, a {
   }
   
   ul {
-    background: #007bff4f;
+    background: rgba(255, 255, 255, 0.500);
     padding: 20px;
   }
   
   ol li {
-    background: #007bff4f;
+    background: rgba(255, 255, 255, 0.500);
     color: darkred;
     padding: 5px;
     margin-left: 35px;
   }
   
   ul li {
-    background: #007bff4f;
+    background: rgba(255, 255, 255, 0.500);
     color: darkblue;
     margin: 5px;
   }
