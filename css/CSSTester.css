@@ -58,7 +58,14 @@ p {
     margin-left: 100px;
   }
 
+  div {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+  }
 
+  /* Margin = Writtable Area */
+  /* Padding = Area */
 
 
 
