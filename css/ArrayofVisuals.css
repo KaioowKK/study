@@ -122,7 +122,7 @@ ol li {
 }
   
 ul li {
-    background: #cce5ff;
+
     color: darkblue;
     margin: 5px;
 }
@@ -145,7 +145,9 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: coral;
+    background-color: rgb(255, 255, 0);
+    text-shadow: 2px 2px rgb(0, 255, 255);
+    font-size: 20px;
 }
 
 /*  inline	            Displays an element as an inline element.                               */
@@ -205,12 +207,34 @@ div.absolute {
     background-color: rgb(0, 0, 0); 
     list-style-type: none;
     text-align: center;
-    margin: 0;
+    margin: 0 center;
     padding: 0;
   }
 
 .nav li {
     display: inline-block;
     font-size: 20px;
-    padding: 20px;
+    padding: 0px;
 }
+
+/*  Combinators >>  */
+
+/*  element element	    div p	   Selects all <p> elements inside <div> elements                                  */
+/*  element>element	    div > p	   Selects all <p> elements where the parent is a <div> element                    */
+/*  element+element	    div + p	   Selects the first <p> element that are placed immediately after <div> elements  */
+/*  element1~element2	p ~ ul	   Selects every <ul> element that are preceded by a <p> element                   */
+
+/*  Pseudo-Class >>  */
+
+/*  ::after	        p::after	        Insert content after every <p> element                          */
+/*  ::before	    p::before	        Insert content before every <p> element                         */
+/*  ::first-letter	p::first-letter	    Selects the first letter of every <p> element                   */
+/*  ::first-line	p::first-line	    Selects the first line of every <p> element                     */
+/*  ::marker	    ::marker	        Selects the markers of list items                               */
+/*  ::selection	    p::selection	    Selects the portion of an element that is selected by a user    */
+
+/*  https://www.w3schools.com/css/css_pseudo_elements.asp       */
+/*  https://www.w3schools.com/css/css_pseudo_classes.asp        */
+
+
+
