@@ -209,12 +209,14 @@ div.absolute {
     text-align: center;
     margin: 0 center;
     padding: 0;
+    border-radius: 0px; 
   }
 
 .nav li {
     display: inline-block;
     font-size: 20px;
     padding: 0px;
+    opacity: 0.8;
 }
 
 /*  Combinators >>  */
@@ -235,6 +237,5 @@ div.absolute {
 
 /*  https://www.w3schools.com/css/css_pseudo_elements.asp       */
 /*  https://www.w3schools.com/css/css_pseudo_classes.asp        */
-
 
 
