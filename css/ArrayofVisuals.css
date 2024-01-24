@@ -269,50 +269,39 @@ li.dropdown {
     padding: 5px 5px;
   }
 
-  #navlist {
-    position: relative;
-    background: #00000000;
-  }
-  
-  #navlist li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 0;
-  }
-  
-  #navlist li, #navlist a {
-    height: 44px;
+  input[type="text"] {
+    width: 150px;
     display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+    margin: 0 auto;
   }
   
-  #home {
-    left: 0px;
-    width: 46px;
-    background: url('../images/tanjiro.ico') 0 0;
+  input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+    margin: 0 auto;
   }
-  
-  #prev {
-    left: 63px;
-    width: 43px;
-    background: url('../images/tanjiro.ico') -47px 0;
-  }
-  
-  #next {
-    left: 129px;
-    width: 43px;
-    background: url('../images/tanjiro.ico') -91px 0;
-  }
-  
-  #home a:hover {
-    background: url('../images/tanjiro.ico') 0 -45px;
-  }
-  
-  #prev a:hover {
-    background: url('../images/tanjiro.ico') -47px -45px;
-  }
-  
-  #next a:hover {
-    background: url('../images/tanjiro.ico') -91px -45px;
+
+  .log {
+    position:relative; 
+    z-index:1; 
+    padding:10px;
+    border-radius: 10px;
+    text-align: justify;
+    color:aliceblue;
+    padding: 10px;
+    color: rgb(255, 255, 255);  
+    box-sizing: border-box;
+    max-width: 100px;
+    margin: 0 auto;
+    word-spacing: 10px;
+    font-style:oblique;
+}
+
+.log:hover, .log:active {
+    background-color: rgba(0, 0, 0, 0);
+    color: azure;
+    text-align: center;
   }
