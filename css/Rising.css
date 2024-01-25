@@ -299,8 +299,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  border-radius: 10px;
+  background-color: #000000;
+  z-index:1; 
+  border-radius: 0px 100px 0px 100px;
+  margin: auto;
+  max-width: 99%;
   
 }
 
@@ -308,7 +311,7 @@ li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 50px;
   text-decoration: none;
   
 }
@@ -368,7 +371,7 @@ li.dropdown {
 .border { 
   border: 10px solid transparent;
   padding: 15px;
-  border-image: url(../images/border.png) 30 round;
+  border-image: url(../images/border.png) 30% round;
   color: rgb(255, 255, 255);  
   word-spacing: 10px;
   max-width: 12%;
