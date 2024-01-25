@@ -448,12 +448,17 @@ span{ display: inline-block; margin:1em; }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+  color: aquamarine;
+  margin-top: 7%;
+  font-size: 30px;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 300px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -463,8 +468,8 @@ span{ display: inline-block; margin:1em; }
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
-  left: 50%;
+  bottom: -350%;
+  left: 16%;
   margin-left: -60px;
 }
 
