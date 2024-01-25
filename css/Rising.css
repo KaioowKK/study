@@ -2,44 +2,11 @@ body {
   margin: 1;
   height: 100vh;
   font-weight: 100;
-  background: radial-gradient(#5e5e5e,#1f1013);
-  -webkit-overflow-Y: hidden;
-  -moz-overflow-Y: hidden;
-  -o-overflow-Y: hidden;
-  overflow-y: hidden;
+  background: radial-gradient(#000000,#696969);
   -webkit-animation: fadeIn 1 1s ease-out;
   -moz-animation: fadeIn 1 1s ease-out;
   -o-animation: fadeIn 1 1s ease-out;
   animation: fadeIn 1 1s ease-out;
-}
-
-button{
-position: absolute;
-border: 2px solid white;
-background: transparent;
-font-family: 'Roboto', sans-serif;
-color: white;
-width: 250px;
-height: 50px;
-font-size: 2em;
-border-radius: 5px;
-opacity: .5;
-top: 60vh;
-bottom: 0px;
-left: 0px;
-right: 0px;
-margin: auto;
-transition: .3s;
-}
-
-button:hover{
-border: 2px solid #104F55;
-background-color: rgba(365,365,365,0.5);
-cursor: pointer;
-color: #104F55;
-opacity: .8;
-transition: .3s;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .light {
@@ -163,10 +130,6 @@ transform: scale(0.9);
 left: 85%;
 }
 
-button:focus{
-outline: none;
-}
-
 @-webkit-keyframes floatUp{
 0%{top: 100vh; opacity: 0;}
 25%{opacity: 1;}
@@ -194,17 +157,6 @@ outline: none;
 50%{top: 0vh; opacity: .8;}
 75%{opacity: 1;}
 100%{top: -100vh; opacity: 0;}
-}
-
-.header{
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-family: 'Roboto', sans-serif;
-font-weight: 200;
-color: white;
-font-size: 2em;
 }
 
 @-webkit-keyframes fadeIn{
@@ -281,17 +233,6 @@ to{opacity: 1;}
 30%{opacity: 1;}
 80%{opacity: .9;}
 100%{opacity: 1;}
-}
-
-#footer{
-font-family: 'Roboto', sans-serif;
-font-size: 1.2em;
-color: white;
-position: fixed;
--webkit-transform: translate(95vw,90vh);
--moz-transform: translate(95vw,90vh);
-transform: translate(95vw,90vh);
-transform: translate(95vw,90vh);
 }
 
 ul {
@@ -416,3 +357,32 @@ li.dropdown {
 /*  word-break	    Specifies line breaking rules for non-CJK scripts                                       */
 /*  word-wrap	      Allows long words to be able to be broken and wrap onto the next line                   */
 /*  writing-mode	  Specifies whether lines of text are laid out horizontally or vertically                 */
+
+.border3 {
+  width: 20%;
+  height: 6.2%;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  text-align: center;
+  border: 4px solid rgb(255, 230, 0);
+  transform: matrix(1, 0, 0.4, 1, 00, 0);
+  margin-top: 4%;
+  margin-left: 40%;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 30px;
+}
+
+.basic-c {
+  width: 90%;
+  height: 13%;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  text-align: center;
+  border: 3px solid rgb(255, 230, 0);
+  transform: matrix(1, 0, -0.4, 1, 00, 0);
+  margin-top: 4%;
+  margin-left: 4%;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(0, 255 105), 0 0 5px rgb(0, 255, 105);
+  box-shadow: 10px 10px 5px rgb(0, 255, 105);
+  font-size: 22px;
+}
