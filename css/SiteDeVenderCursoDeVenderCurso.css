@@ -237,3 +237,7 @@ a:hover, a:active {
   color: red;
   background-color: yellow;  
 }
+
+/*  calc()	  Allows you to perform calculations to determine CSS property values                     */
+/*  max()	    Uses the largest value, from a comma-separated list of values, as the property value    */
+/*  min()	    Uses the smallest value, from a comma-separated list of values, as the property value   */
