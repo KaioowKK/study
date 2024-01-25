@@ -415,22 +415,37 @@ li.dropdown {
 /* perspective(n)	        Defines a perspective view for a 3D transformed element                         */
 
 .border4 {
-  width: 100px;
+  width: 200px;
   height: 70px;
   background: rgb(255, 0, 135);
   transition: width 2s, height 2s;
-  margin: auto;
-  margin-top: 3%;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 60px;
-  display: none;
-
 }
 
 .border4:hover {
-  width: 300px;
-  height: 50px;
-  margin: auto;
-  display: block;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  text-align: center;
 }
+
+.basic-d {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 0, 135);
+  border-radius: 5px;
+  margin: auto;
+  transition: width 1s, height 1s, transform 3s;
+}
+
+.basic-d:hover {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  transform: rotate(360deg);
+}
+
+span{ display: inline-block; margin:1em; } 
+.fliper{ transform: scale(-1, 1); color:red; }
