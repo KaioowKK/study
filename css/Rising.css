@@ -376,8 +376,44 @@ li.dropdown {
   text-align: center;
   text-shadow: 2px 2px rgb(128, 128, 128);
   font-family: 'Lucida Grande' , monospace;
-  padding: 15px;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 4%;
   margin-bottom: 1%;
 }
+
+.basic-b {
+  z-index:1; 
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);  
+  margin: 0 auto;
+  padding: 4px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  box-shadow: 10px 10px 5px rgb(255, 0, 0);
+  
+}
+
+.border2 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(../images/border.png) 30% round;
+  color: rgb(255, 255, 255);  
+  word-spacing: 10px;
+  max-width: 19%;
+  text-align: center;
+  text-shadow: 2px 2px rgb(255, 0, 0);
+  font-family: 'Lucida Grande' , monospace;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+
+/*  CSS Text Effect Properties  */
+
+/*  text-justify	  Specifies how justified text should be aligned and spaced                               */
+/*  text-overflow 	Specifies how overflowed content that is not displayed should be signaled to the user   */
+/*  word-break	    Specifies line breaking rules for non-CJK scripts                                       */
+/*  word-wrap	      Allows long words to be able to be broken and wrap onto the next line                   */
+/*  writing-mode	  Specifies whether lines of text are laid out horizontally or vertically                 */
