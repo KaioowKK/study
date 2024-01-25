@@ -299,11 +299,13 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
   z-index:1; 
   border-radius: 0px 100px 0px 100px;
   margin: auto;
   max-width: 99%;
+  height: 12%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 0), rgb(0, 0, 255));
   
 }
 
