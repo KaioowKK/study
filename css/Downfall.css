@@ -1,3 +1,27 @@
+.nierentitled {
+  width: 200px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50px;
+  text-align: center;
+  position: relative;
+  animation: niernimation 5s infinite;
+  color: #ffffff;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+@keyframes niernimation {
+  0%   {background-color:red; left:0px; top:0px; width: 200px;}
+  25%  {background-color:yellow; left:35%; top:0px;   color: #000000; width: 400px;}
+  50%  {background-color:blue; left:82.5%; top:0px; color: #ffffff; width: 200px;}
+  75%  {background-color:green; left:35%; top:0px; color: #000000; width: 400px;}
+  100% {background-color:red; left:0px; top:0px; width: 200px;}
+}
+
+
+
 .buttonxbase {
     background-color: #04AA6D; /* Green */
     border: none;
@@ -23,21 +47,13 @@ body {
     100%	{ color: #04a1d5;}
 }
   
-  .buttonx2 {
-    
-    background-color: #008CBA;
-    animation: blinkingText 3s infinite;
+  .buttonx2 {background-color: #008CBA; animation: blinkingText 1s infinite;}
 
-} /* Blue */
+  .buttonx3 {background-color: #f44336;}
 
-  .buttonx3 {background-color: #f44336;} /* Red */ 
+  .buttonx4 {background-color: #e7e7e7; color: black;}
 
-  .buttonx4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-
-  .buttonx5 {
-    background-color: #555555;
-    animation: blinkingText 0.1s infinite;
-} /* Black */
+  .buttonx5 {background-color: #555555;}
 
 .pagination {
     margin-top: 7%;
@@ -78,3 +94,8 @@ body {
     column-rule-width: 1px;
     column-rule-color: lightblue;
   }
+
+  /*  User  Interface   */
+
+  /*  outline-offset	Adds space between an outline and the edge or border of an element    */
+  /*  resize	Specifies whether or not an element is resizable by the user                  */
