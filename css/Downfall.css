@@ -4,6 +4,9 @@
   --yellow: #ffff00;
   --blue: #0000ff;
   --green: #00aa00;
+  --fitleft: calc(10% - 100px);
+  --fitcenter: calc(50% - 200px);
+  --fitright: calc(90% - 100px);
 }
 
 .nierentitled {
@@ -21,11 +24,15 @@
 }
 
 @keyframes niernimation {
-  0%   {background-color: var(--red); left: calc(10% - 100px); top:0px; width: 200px;   font-size: 15px;   padding-bottom: 0%;}
-  25%  {background-color: var(--yellow); left: calc(50% - 200px); top:0px;   color: #000000; width: 400px;   font-size: 30px; padding-bottom: 1%;}
-  50%  {background-color: var(--blue); left: calc(90% - 100px); top:0px; color: #ffffff; width: 200px;  font-size: 15px; padding-bottom: 0%;}
-  75%  {background-color: var(--green); left: calc(50% - 200px); top:0px; color: #000000; width: 400px;   font-size: 30px; padding-bottom: 1%;}
-  100% {background-color: var(--red); left: calc(10% - 100px); top:0px; width: 200px;   font-size: 15px; padding-bottom: 0%;}
+  0%   {background-color: var(--red); left: var(--fitleft); top:0px; width: 200px;   font-size: 15px;   padding-bottom: 0%;}
+  25%  {background-color: var(--yellow); left: var(--fitcenter); top:0px;   color: #000000; width: 400px;   font-size: 30px; padding-bottom: 1%;}
+  50%  {background-color: var(--blue); left: var(--fitright); top:0px; color: #ffffff; width: 200px;  font-size: 15px; padding-bottom: 0%;}
+  75%  {background-color: var(--green); left: var(--fitcenter); top:0px; color: #000000; width: 400px;   font-size: 30px; padding-bottom: 1%;}
+  100% {background-color: var(--red); left: var(--fitleft); top:0px; width: 200px;   font-size: 15px; padding-bottom: 0%;}
+}
+
+body {
+  background-color: #888888;
 }
 
 .buttonxbase {
@@ -40,20 +47,8 @@
     cursor: pointer;
     float: left;
 }
-
-body {
-    background-color: #000;
-    animation: blinkingText 30s infinite;
-}
-@keyframes blinkingText{
-    0%		{ color: #10c018;}
-    25%		{ color: #1056c0;}
-    50%		{ color: #ef0a1a;}
-    75%		{ color: #254878;}
-    100%	{ color: #04a1d5;}
-}
   
-  .buttonx2 {background-color: #008CBA; animation: blinkingText 1s infinite;}
+  .buttonx2 {background-color: #008CBA;}
 
   .buttonx3 {background-color: #f44336;}
 
@@ -64,7 +59,7 @@ body {
 .pagination {
     margin-top: 7%;
     display: inline-block;
-    margin-left: 40%;
+    margin-left: var(--fitcenter);
   }
   
   .pagination a {
@@ -105,3 +100,5 @@ body {
 
   /*  outline-offset	Adds space between an outline and the edge or border of an element    */
   /*  resize	Specifies whether or not an element is resizable by the user                  */
+
+  /*  box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not     */
