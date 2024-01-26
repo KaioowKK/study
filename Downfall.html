@@ -10,8 +10,11 @@
 
 <body>
 
-    <h3 class="nierentitled">NIER AUTOMATA</h3>
-    <svg width="1366" height="600">
+    <h3 class="nierentitled">Nier Automata</h3>
+
+    <br><br><br><br><br>
+
+    <svg width="1340" height="600">
       <mask id="svgmask3">
         <circle fill="#ffffff" cx="125" cy="125" r="100"></circle>
         <circle fill="#ffffff" cx="375" cy="200" r="75"></circle>
@@ -19,34 +22,65 @@
         <circle fill="#ffffff" cx="700" cy="290" r="200"></circle>
         <circle fill="#ffffff" cx="500" cy="100" r="50"></circle>
         <circle fill="#ffffff" cx="975" cy="500" r="100"></circle>
-        <circle fill="#ffffff" cx="1150" cy="220" r="200"></circle>
+        <circle fill="#ffffff" cx="1120" cy="220" r="190"></circle>
 
       </mask>
       <image xlink:href="images/nier.jpg" style="width: 100%;" mask="url(#svgmask3)"></image>
     </svg>
+
+    <h2 style="text-align: center;">Responsive Four Column Layout</h2>
+    <p style="text-align: center;"><strong>Resize the browser window to see the responsive effect.</strong> On screens that are 992px wide or less, the columns will resize from four columns to two columns. On screens that are 600px wide or less, the columns will stack on top of each other instead of next to eachother.</p>
     
-    <button class="buttonxbase">Green</button>
-    <button class="buttonxbase buttonx2">Blue</button>
-    <button class="buttonxbase buttonx3">Red</button>
-    <button class="buttonxbase buttonx4">Gray</button>
-    <button class="buttonxbase buttonx5">Black</button>
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+      </div>
+      
+      <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+      </div>
+      
+      <div class="column" style="background-color:#ccc;">
+        <h2>Column 3</h2>
+        <p>Some text..</p>
+      </div>
+      
+      <div class="column" style="background-color:#ddd;">
+        <h2>Column 4</h2>
+        <p>Some text..</p>
+      </div>
+    </div>
 
-    <br><br><br><br>
-
-    <div class="newspaper">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+    <div class="wrapper">
+        <div id="leftsidebar">
+          <ul id="menulist">
+            <li class="menuitem">Menu-item 1</li>
+            <li class="menuitem">Menu-item 2</li>
+            <li class="menuitem">Menu-item 3</li>
+            <li class="menuitem">Menu-item 4</li>
+            <li class="menuitem">Menu-item 5</li>
+          </ul>
         </div>
+        
+        <div id="main">
+          <h1>Resize the browser window to see the effect!</h1>
+          <p>This example shows a menu that will float to the left of the page if the viewport is 600 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+        </div>
+    </div>
 
-        <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a class="active" href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-          </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
 
 </body>
 

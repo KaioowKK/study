@@ -4,31 +4,31 @@
   --yellow: #ffff00;
   --blue: #0000ff;
   --green: #00aa00;
-  --fitleft: calc(10% - 100px);
-  --fitcenter: calc(50% - 200px);
-  --fitright: calc(90% - 100px);
+  --fitleft: calc(10% - 125px);
+  --fitcenter: calc(50% - 250px);
+  --fitright: calc(90% - 125px);
 }
 
 .nierentitled {
-  width: 200px;
-  height: 40px;
+  width: 250px;
+  height: 70px;
   background-color: var(--blue);
   border-radius: 50px;
   text-align: center;
-  position: relative;
+  position: absolute;
   animation: niernimation 5s infinite;
   color: #ffffff;
-  padding: 1%;
   font-family: "Sofia", sans-serif;
   font-size: 15px;
+  padding-top: 0.4%;
 }
 
 @keyframes niernimation {
-  0%   {background-color: var(--red); left: var(--fitleft); top:0px; width: 200px;   font-size: 15px;   padding-bottom: 0%;}
-  25%  {background-color: var(--yellow); left: var(--fitcenter); top:0px;   color: #000000; width: 400px;   font-size: 30px; padding-bottom: 1%;}
-  50%  {background-color: var(--blue); left: var(--fitright); top:0px; color: #ffffff; width: 200px;  font-size: 15px; padding-bottom: 0%;}
-  75%  {background-color: var(--green); left: var(--fitcenter); top:0px; color: #000000; width: 400px;   font-size: 30px; padding-bottom: 1%;}
-  100% {background-color: var(--red); left: var(--fitleft); top:0px; width: 200px;   font-size: 15px; padding-bottom: 0%;}
+  0%   {background-color: var(--red); left: var(--fitleft); top:0px; width: 250px; font-size: 15px; padding-top: 0.7%}
+  25%  {background-color: var(--yellow); left: var(--fitcenter); top:0px; color: #000000; width: 500px; font-size: 30px; padding-top: 0.4%}
+  50%  {background-color: var(--blue); left: var(--fitright); top:0px; color: #ffffff; width: 250px; font-size: 15px; padding-top: 0.7%}
+  75%  {background-color: var(--green); left: var(--fitcenter); top:0px; color: #000000; width: 500px; font-size: 30px; padding-top: 0.4%}
+  100% {background-color: var(--red); left: var(--fitleft); top:0px; width: 250px;  font-size: 15px; padding-top: 0.7%}
 }
 
 body {
@@ -88,17 +88,69 @@ body {
     border-bottom-right-radius: 5px;
   }
 
-  .newspaper {
-    column-count: 3;
-    column-gap: 40px;
-    column-rule-style: solid;
-    column-rule-width: 1px;
-    column-rule-color: lightblue;
-  }
-
   /*  User  Interface   */
 
   /*  outline-offset	Adds space between an outline and the edge or border of an element    */
   /*  resize	Specifies whether or not an element is resizable by the user                  */
 
   /*  box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not     */
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+
+#menulist {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 600px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
