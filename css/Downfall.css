@@ -2,7 +2,7 @@
     background-color: #04AA6D; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 105px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -13,7 +13,7 @@
 
 body {
     background-color: #000;
-    animation: blinkingText 3s infinite;
+    animation: blinkingText 30s infinite;
 }
 @keyframes blinkingText{
     0%		{ color: #10c018;}
@@ -42,6 +42,7 @@ body {
 .pagination {
     margin-top: 7%;
     display: inline-block;
+    margin-left: 40%;
   }
   
   .pagination a {
@@ -68,4 +69,12 @@ body {
   .pagination a:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+
+  .newspaper {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
   }
