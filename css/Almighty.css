@@ -14,7 +14,7 @@ body {
 
 .logo {
     width: 20px;
-    height: 65px;
+    height: 75px;
     background: rgb(125, 125, 125, 0.500);
     font-size: 0px;
     border-radius: 5px;
@@ -35,7 +35,7 @@ body {
   
   .logo:hover {
     width: 98%;
-    height: 65px;
+    height: 75px;
     font-size: 50px;
     background: rgb(255, 0, 0);
     text-align: center;
