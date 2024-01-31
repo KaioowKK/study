@@ -21,8 +21,8 @@
         <br><br><br><br><br>
 
         <div class="container p-5 my-5 bg-dark text-white">
-            <h1>Almighty Character Creator</h1>
-            <p>Description below of the attributes</p>
+            <h1>Attributes</h1>
+            <p>You have 1 point per year of life, capping at 30 attribute points.</p>
         </div>
 
     <div class="row">
@@ -80,18 +80,60 @@
         data-bs-content="Increases the amount of jokes you carry by 5% per point and reduces your tolerance to bad jokes by the same amount.">
         Wisdom</div>
     </div>
-
-        <script>
-            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-              return new bootstrap.Popover(popoverTriggerEl)
-            })
-        </script>
           
         <div class="container p-5 my-5 bg-primary text-white">
-            <h1>Raphael's Final ACT</h1>
-            <p>This container has a blue background color and a white text, and some extra padding and margins.</p>
+            <h1>Skills</h1>
+            <p>Starting at 18 years you unlock 1 skill point at every 4 years of life, capping out at 4 when you reach 30 years old.</p>
         </div>
+
+        <div class="row">
+            <div tabindex="0" 
+            class="btn btn-lg btn-outline-success col-sm-3 p-1" 
+            role="button" 
+            data-bs-toggle="popover" 
+            data-bs-trigger="focus" 
+            title="Bad Odour" 
+            data-bs-content="You developed a overall smelly body after years without showering. Reduces chances of being robbed by 70% but the opposite sex finds you 80% less attractive.">
+            Bad Odour</div>
+
+
+            <div tabindex="0" 
+            class="btn btn-lg btn-outline-danger col-sm-3 p-1" 
+            role="button" 
+            data-bs-toggle="popover" 
+            data-bs-trigger="focus" 
+            title="Gymbro" 
+            data-bs-content="During any conversation with a male, provide you 35% chance to yell 'Do you even lift bro?' every 30 seconds.">
+            Gymbro</div>
+
+            <div tabindex="0" 
+            class="btn btn-lg btn-outline-primary col-sm-3 p-1" 
+            role="button" 
+            data-bs-toggle="popover" 
+            data-bs-trigger="focus" 
+            title="Memist" 
+            data-bs-content="You worship meme culture, increases dopamine generation by 50% but breaks you concentration when doing tasks every 5 min to watch memes">
+            Memist</div>
+
+            <div tabindex="0" 
+            class="btn btn-lg btn-outline-warning col-sm-3 p-1" 
+            role="button" 
+            data-bs-toggle="popover" 
+            data-bs-trigger="focus" 
+            title="Coffee Addict" 
+            data-bs-content="You drink way too much coffee, reducing your minimun sleep time by 70% and your lifespan by 40%.">
+            Coffee Addict</div>
+
+        </div>
+
+        <br><br><br><br><br>
+
+            <script>
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                  return new bootstrap.Popover(popoverTriggerEl)
+                })
+            </script>
 
         <div class="row">
               <div class="col-sm-4 p-3 bg-primary text-white">.col</div>
@@ -235,6 +277,15 @@
       </div>
 
         <a href="#" class="btn btn-warning">Link Button</a>
+
+        <span class="badge bg-primary">Primary</span>
+        <span class="badge bg-secondary">Secondary</span>
+        <span class="badge bg-success">Success</span>
+        <span class="badge bg-danger">Danger</span>
+        <span class="badge bg-warning">Warning</span>
+        <span class="badge bg-info">Info</span>
+        <span class="badge bg-light">Light</span>
+        <span class="badge bg-dark">Dark</span>
 
       <br><br><br>
 
