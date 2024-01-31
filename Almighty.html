@@ -14,36 +14,58 @@
     <body>
         <p class="logo">
             Character Creator IRL
-            <a class="menu" href="#">Attributes</a>
-            <a class="menu" href="#">Skills</a>
         </p>
 
     <!--Area Shift--> <br><br><br><br><br><br><br>
 
-        <div class="row">
-            <div class="col-sm-4 p-3 bg-primary text-white">Character Name</div>
-            <div class="col-sm-8 p-3 bg-dark text-white">Character Background</div>
-          </div>
-          <br>
-          <div class="row">
-          <input class="col-sm-4 p-2 bg-primary text-white"></input>
-          <input class="col-sm-8 p-2 bg-dark text-white"></input>
-      </div>
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-primary"><a href="#C1" class="menu">Name and Background</a></button>
+        <button type="button" class="btn btn-success"><a href="#C2" class="menu"">Attributes</a></button>
+        <button type="button" class="btn btn-warning"><a href="#C3" class="menu"">Skills</a></button>
+        <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Example Builds</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#C4">Muskinho</a></li>
+            </ul>
+        </div>
+    </div>
 
-      <br><br>
 
-      <div class="container mt-3">
-          <div class="progress">
-          <div class="progress-bar progress-bar-striped" style="width:30%"></div>
-          </div>
-      </div>  
+        <!--Area Shift--> <br><br><br><br>
+
+    <h2 id="C1"></h2>
+    <div class="row">
+        <div class="col-sm-4 p-3 bg-primary text-white">Character Name</div>
+         <div class="col-sm-8 p-3 bg-dark text-white">Character Background</div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <input class="col-sm-4 p-2 bg-primary text-white"></input>
+        <input class="col-sm-8 p-2 bg-dark text-white"></input>
+    </div>
+
+    <br><br>
+
+    <div class="container mt-3">
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width:30%"></div>
+        </div>
+    </div>  
 
     <!--Area Shift--> <br><br><br><br>
 
-        <div class="container p-4 my-5 bg-dark text-white">
-            <h1>Attributes</h1>
-            <p>You have 1 point per year of life, capping at 30 attribute points.</p>
-        </div>
+    <h2 id="C2"></h2>
+    <div class="container p-4 my-5 bg-dark text-white">
+        <h1>Attributes</h1>
+        <p>You have 1 point per year of life, capping at 30 attribute points.</p>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show container">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>Tip!</strong> Beware that some attributes can cause harm to your playstyle.
+    </div>
 
     <div class="row">
         <div tabindex="0" 
@@ -111,9 +133,15 @@
 
     <!--Area Shift--> <br><br><br><br>
           
+    <h2 id="C3"></h2>
     <div class="container p-2 my-5 bg-primary text-white">
         <h1>Skills</h1>
         <p>Starting at 18 years you unlock 1 skill point at every 4 years of life, capping out at 4 when you reach 30 years old.</p>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show container">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>Caution!</strong> Some combinations can make your character unplayable.
     </div>
 
     <div class="row">
@@ -253,12 +281,18 @@
 
     <!--Area Shift--> <br><br><br><br><br><br>
 
-    <div class="card img-fluid container" style="width:700px">
+    <h2 id="C4"></h2>
+    <div class="container mt-3">
+    <div class="card img-fluid" style="width:1100px">
     <img class="card-img-top" src="images/Muskinho.gif" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
     <h4 class="card-title"><p style="color: aliceblue">Muskinho</p></h4>
     <p class="card-text "><p style="color: aliceblue">Como criar o personagem Elon Musk?</p></p>
     <a href="#" class="btn btn-primary">Clique Aqui e saiba mais</a>
+    <span class="badge bg-danger">Hard to Play</span>
+    <span class="badge bg-success">Good Wealth Generation</span>
+    <span class="badge bg-warning">Higiene Issues</span>
+    </div>
     </div>
     </div>
 
@@ -283,7 +317,32 @@
         <div class="progress">
         <div class="progress-bar bg-danger progress-bar-striped" style="width:100%"></div>
         </div>
-    </div> 
+    </div>
+
+    <br><br>
+
+    <div class="container mt-3">
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+    </button>
+    
+    <button class="btn btn-success">
+        <span class="spinner-border bg-danger spinner-border-xl"></span>
+        Loading..
+    </button>
+      
+    <button class="btn btn-outline-secondary" disabled>
+        <span class="spinner-grow spinner-grow-sm bg-secondary"></span>
+        Disabled
+    </button>
+    </div>
+
+    <ul class="pagination justify-content-end">
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+    </ul>
 
 
 
@@ -292,43 +351,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
         
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <p class="text-bg-light">THE <abbr title="30CM Mole">INGENIOUS</abbr> TECHNIQUE</p>
-
-        <p class="text-bg-primary">This text is important.</p>
-        <p class="text-bg-success">This text indicates success.</p>
-        <p class="text-bg-info">This text represents some information.</p>
-        <p class="text-bg-warning">This text represents a warning.</p>
-        <p class="text-bg-danger">This text represents danger.</p>
-        <p class="text-bg-secondary">Secondary background color.</p>
-        <p class="text-bg-dark">Dark grey background color.</p>
-        <p class="text-bg-light">Light grey background color.</p>
-
-        <div class="bg-primary p-3"></div>
-        <div class="bg-success p-3"></div>
-        <div class="bg-info p-3"></div>
-        <div class="bg-warning p-3"></div>
-        <div class="bg-danger p-3"></div>
-        <div class="bg-secondary p-3"></div>
-        <div class="bg-dark p-3"></div>
-        <div class="bg-light p-3"></div>
 
         <table class="table">
         <thead>
@@ -409,110 +437,7 @@
 
         <br><br>
 
-        <div class="alert alert-success alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Success!</strong> This alert box could indicate a successful or positive action.
-        </div>
-        <div class="alert alert-info alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-        </div>
-        <div class="alert alert-warning alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-        </div>
-        <div class="alert alert-danger alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-        </div>
-        <div class="alert alert-primary alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Primary!</strong> Indicates an important action.
-        </div>
-        <div class="alert alert-secondary alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Secondary!</strong> Indicates a slightly less important action.
-        </div>
-        <div class="alert alert-dark alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Dark!</strong> Dark grey alert.
-        </div>
-        <div class="alert alert-light alert-dismissible fade show">
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Light!</strong> Light grey alert.
-        </div>
-      </div>
-
         <a href="#" class="btn btn-warning">Link Button</a>
-
-        <span class="badge bg-primary">Primary</span>
-        <span class="badge bg-secondary">Secondary</span>
-        <span class="badge bg-success">Success</span>
-        <span class="badge bg-danger">Danger</span>
-        <span class="badge bg-warning">Warning</span>
-        <span class="badge bg-info">Info</span>
-        <span class="badge bg-light">Light</span>
-        <span class="badge bg-dark">Dark</span>
-
-        <div class="container mt-3">
-            <h2>Striped Progress Bars</h2>
-            <p>The .progress-bar-striped class adds stripes to the progress bars:</p> 
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped" style="width:30%"></div>
-            </div>
-            <br>
-            <div class="progress">
-              <div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
-            </div>
-            <br>
-            <div class="progress">
-              <div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
-            </div>
-            <br>
-            <div class="progress">
-              <div class="progress-bar bg-warning progress-bar-striped" style="width:60%"></div>
-            </div>
-            <br>
-            <div class="progress">
-              <div class="progress-bar bg-danger progress-bar-striped" style="width:70%"></div>
-            </div>
-          </div>
-
-          <div class="spinner-border text-muted"></div>
-          <div class="spinner-border text-primary"></div>
-          <div class="spinner-border text-success"></div>
-          <div class="spinner-border text-info"></div>
-          <div class="spinner-border text-warning"></div>
-          <div class="spinner-border text-danger"></div>
-          <div class="spinner-border text-secondary"></div>
-          <div class="spinner-border text-dark"></div>
-          <div class="spinner-border text-light"></div>
-
-            <button class="btn btn-primary">
-              <span class="spinner-border spinner-border-sm"></span>
-            </button>
-          
-            <button class="btn btn-primary">
-              <span class="spinner-border spinner-border-sm"></span>
-              Loading..
-            </button>
-            
-            <button class="btn btn-primary" disabled>
-              <span class="spinner-border spinner-border-sm"></span>
-              Loading..
-            </button>
-            
-            <button class="btn btn-primary" disabled>
-              <span class="spinner-grow spinner-grow-sm"></span>
-              Loading..
-            </button>
-
-            <ul class="pagination justify-content-end">
-                <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-              </ul>
 
     </body>
 </html>
