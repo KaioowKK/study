@@ -5,7 +5,6 @@
     <head>
         <link rel="stylesheet" href="css/Almighty.css" alt="error">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
@@ -14,17 +13,80 @@
 
     <body>
         <p class="logo">
-            Bootstrap 5 Introduction
-            <a class="menu" href="#">Part 1</a>
-            <a class="menu" href="#">Part 2</a>
+            Character Creator IRL
+            <a class="menu" href="#">Attributes</a>
+            <a class="menu" href="#">Skills</a>
         </p>
 
         <br><br><br><br><br>
 
         <div class="container p-5 my-5 bg-dark text-white">
-            <h1>Raphael's Final ACT</h1>
-            <p>Level 12</p>
+            <h1>Almighty Character Creator</h1>
+            <p>Description below of the attributes</p>
         </div>
+
+    <div class="row">
+        <div tabindex="0" 
+        class="btn btn-lg btn-danger col-sm-2 p-1" 
+        role="button" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Strength" 
+        data-bs-content="Increases your physical prowess, increases your lifting power by 5% per point.">
+        Strength</div>
+
+        <div tabindex="0" 
+        class="btn btn-lg btn-success col-sm-2 p-1" 
+        role="button" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Agility Attribute" 
+        data-bs-content="Increases your fighting sports ability making you react and deliver blows faster. Also reduces time to ejaculate by 5% per point. ">
+        Agility</div>
+
+        <div tabindex="0" 
+        class="btn btn-lg btn-primary col-sm-2 p-1" 
+        role="button" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Intelligence Attribute" 
+        data-bs-content="Increases your IQ by 5% per point, making you talk weird shit in social encounters.">
+        Intelligence</div>
+
+        <div tabindex="0" 
+        class="btn btn-lg btn-warning col-sm-2 p-1" 
+        role="button" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Constitution Attribute" 
+        data-bs-content="Increases your weight and chance to suffer bullying by 5% per point.">
+        Constitution</div>
+
+        <div tabindex="0" 
+        class="btn btn-lg btn-light col-sm-2 p-1" 
+        role="button" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Woke Attribute" 
+        data-bs-content="Reduces your chance to trigger woke feminist groups (Mansplaining, I dont need a man in my life , How dare you?)">
+        Woke</div>
+
+        <div tabindex="0" 
+        class="btn btn-lg btn-info col-sm-2 p-1" 
+        role="button" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Wisdom Attribute" 
+        data-bs-content="Increases the amount of jokes you carry by 5% per point and reduces your tolerance to bad jokes by the same amount.">
+        Wisdom</div>
+    </div>
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
           
         <div class="container p-5 my-5 bg-primary text-white">
             <h1>Raphael's Final ACT</h1>
@@ -173,30 +235,8 @@
       </div>
 
         <a href="#" class="btn btn-warning">Link Button</a>
-        <button type="button" class="btn btn-success">Button</button>
-        <input type="button" class="btn btn-success" value="Input Button">
-        <input type="submit" class="btn btn-success" value="Submit Button">
-        <input type="reset" class="btn btn-danger" value="Reset Button">
-        <button type="button" class="btn">Basic</button>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-link">Link</button>
-        <button type="button" class="btn btn-outline-warning">Warning</button>
-        <button type="button" class="btn btn-outline-danger">Danger</button>
-        <button type="button" class="btn btn-outline-dark">Dark</button>
-      </div>
 
-      
-        <button type="button" 
-                class="btn btn-lg btn-danger" 
-                data-bs-toggle="popover" 
-                title="Strength" 
-                data-bs-content="Each point increases physical damage and is required to wear heavy armor.">
-                Strength Attribute
-        </button>
+      <br><br><br>
 
         <br><br><br><br><br><br><br><br><br><br>
 
