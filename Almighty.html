@@ -14,7 +14,7 @@
     <body>
 
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid">
+            <div class="container-fluid" style="position: sticky; z-index: 2;">
               <a class="navbar-brand" href="javascript:void(0)">QwarZ World</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
               <div class="collapse navbar-collapse bg-secondary" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link text-warning bg-primary" href="javascript:void(0)">Character Creator</a>
+                    <a class="nav-link" href="#section1">Character Creator</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0)">Job Finder</a>
@@ -49,6 +49,7 @@
 
     <!--Area Shift--> <br><br><br><br><br><br><br>
 
+    <div id="section1">
     <div class="btn-group-vertical">
         <button type="button" class="btn btn-primary"><a href="#C1" class="menu">Name and Background</a></button>
         <button type="button" class="btn btn-success"><a href="#C2" class="menu"">Attributes</a></button>
@@ -310,6 +311,7 @@
             return new bootstrap.Popover(popoverTriggerEl)
         })
     </script>
+    </div>
 
     <!--Area Shift--> <br><br><br><br><br><br>
 

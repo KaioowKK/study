@@ -61,4 +61,8 @@ body {
     /*.table-responsive-xl	< 1200px    */
     /*.table-responsive-xxl	< 1400px    */
 
-
+    .sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index:2;
+    }
