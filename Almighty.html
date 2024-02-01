@@ -424,12 +424,26 @@
     </div>
 
     <div class="container mt-3">
-        <h2 style="color: beige;">Choose your favorite color, you may get lucky!</h2>
-        <form>
+        <h2 style="color: rgb(0, 225, 255);">Choose your favorite color and your favorite movie below! (It will give some stats)
           <label for="myColor" class="form-label"></label>
           <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
         </form>
       </div>
+
+    <div class="container mt-3">
+        <form action="/action_page.php">
+            <label for="browser" class="form-label"></label>
+            <input class="form-control" list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                <option value="Godfather">
+                <option value="Barbie">
+                <option value="The Wolf of Wall Street">
+                <option value="Oppenheimer">
+                <option value="Fight Club">
+                </datalist>    
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
 
     <br><br>
 
@@ -437,6 +451,8 @@
         <h1>Our Best Players</h1>
         <p>Aim for the Leaderboard.</p>
     </div>
+
+    <br><br>
 
     <table class="table">
         <thead>
