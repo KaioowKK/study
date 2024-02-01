@@ -438,19 +438,19 @@
         </thead>
         <tbody>
             <tr>
-            <td>Muskinho</td>
+            <td><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Currently Top 1 Player">Muskinho</a></td>
             <td>Intelligence</td>
             <td>Wealth Generation</td>
         </tr>   
 
         <tr class="table-primary">
-            <td>Mia Khalifa</td>
+            <td><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Currently Top 2 Player">Mia Khalifa</a></td>
             <td>Woke</td>
             <td>'Asset' Giving</td>
         </tr>
 
         <tr class="table-success">
-            <td>Gigachad da Silva</td>
+            <td><a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Currently Top 3 Player">Gigachad da Silva</a></td>
             <td>Strength</td>
             <td>God's Favorite</td>
         </tr>
@@ -467,13 +467,15 @@
             <td>Alphaness Spreader</td>
         </tr>
 
-        <tr class="table-warning">
-            <td>Hester Soares</td>
-            <td>Agility</td>
-            <td>Male Wealth Transfer</td>
-        </tr>
         </tbody>
     </table>
+      
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
         FAQ
