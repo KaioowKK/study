@@ -507,6 +507,27 @@
         </div>
     </div>
 
+    <button type="button" class="btn btn-success" id="toastbtn">Tutorials</button>
+        <div class="toast">
+          <div class="toast-header">
+            <strong class="me-auto">Beginner's Guide</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">
+            <p>- Pick a female character,focus on Leveling UP Till LV18, then focus on transfering wealth from males.</p>
+          </div>
+        </div>
+      
+    <script>
+        document.getElementById("toastbtn").onclick = function() {
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function(toastEl) {
+            return new bootstrap.Toast(toastEl)
+        })
+        toastList.forEach(toast => toast.show()) 
+    }
+    </script>
+
     <ul class="pagination justify-content-end">
         <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
         <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
