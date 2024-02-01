@@ -468,9 +468,9 @@
             <label class="form-check-label text-white">I am a Man (AlphaMale)</label>
           </div>
         </form>
-      </div>
+    </div>
 
-      <div class="container mt-3">
+    <div class="container mt-3">
         <p class="text-primary" style="font-size: 22px;">Set up your Attributes (Max Value : 10)</p>
         <form action="/action_page.php">
           <label for="customRange" class="form-label text-white">Strength</label>
@@ -486,9 +486,9 @@
           <label for="customRange" class="form-label text-white">Wisdom</label>
           <input type="range" class="form-range" id="customRange" step="10" name="points">
         </form>
-      </div>
+    </div>
 
-      <div class="container mt-3">
+    <div class="container mt-3">
         <p class="text-primary" style="font-size: 22px;">Your info</p>      
         <form action="/action_page.php">
           <div class="input-group mb-3">
@@ -499,9 +499,24 @@
             <input type="text" class="form-control" placeholder="Your Email" name="email">
             <span class="input-group-text">@example.com</span>
           </div>
+        </form>
+    </div>
+
+    <div class="container mt-3">
+        <p class="text-primary" style="font-size: 22px;">Select Your Sexual Orientation</p>
+        <form action="/action_page.php">
+          <div class="form-floating mb-3 mt-3">
+            <select class="form-select" id="sel1" name="sellist">
+              <option>Homosexual</option>
+              <option>Asexual</option>
+              <option>LGBTQIA+</option>
+              <option>Skoliosexual</option>
+            </select>
+            <label for="sel1" class="form-label">Select list (select one):</label>
+          </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-      </div>
+    </div>
 
     <br><br>
 
