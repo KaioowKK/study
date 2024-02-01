@@ -47,6 +47,15 @@
         Character Creator v2.103
     </p>
 
+    <div class="container mt-3">
+        <form action="/action_page.php">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+            <label class="form-check-label" for="mySwitch" style="color: aqua;">Hide data from USA Government</label>
+          </div>
+        </form>
+      </div>
+
     <!--Area Shift--> <br><br><br><br><br><br><br>
 
     <div id="section1">
@@ -424,7 +433,7 @@
     </div>
 
     <div class="container mt-3">
-        <h2 style="color: rgb(0, 225, 255);">Choose your favorite color and your favorite movie below! (It will give some stats)
+        <h2 style="color: rgb(0, 225, 255);">Complete the Form below to help us set up your initial spawnpoint in our game.
           <label for="myColor" class="form-label"></label>
           <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
         </form>
@@ -441,9 +450,26 @@
                 <option value="Oppenheimer">
                 <option value="Fight Club">
                 </datalist>    
-                <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </form>
     </div>
+
+    <div class="container mt-3">
+        <form action="/action_page.php">
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+            <label class="form-check-label text-white" for="radio1">I am a Man (Betamale)</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+            <label class="form-check-label text-white" for="radio2" >I am a Woman</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" disabled>
+            <label class="form-check-label text-white">I am a Man (AlphaMale)</label>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </div>
 
     <br><br>
 
