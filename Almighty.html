@@ -444,11 +444,11 @@
             <label for="browser" class="form-label"></label>
             <input class="form-control" list="browsers" name="browser" id="browser">
                 <datalist id="browsers">
-                <option value="Godfather">
-                <option value="Barbie">
-                <option value="The Wolf of Wall Street">
-                <option value="Oppenheimer">
-                <option value="Fight Club">
+                <option value="My Favorite Movie is Godfather">
+                <option value="I loved watching Barbie with my boyfriend">
+                <option value="The Wolf of Wall Street inspired me to use drugs">
+                <option value="Oppenheimer taught me how to make DIY bombs">
+                <option value="Every night i dream i am in Fight Club">
                 </datalist>    
         </form>
     </div>
@@ -485,8 +485,21 @@
           <input type="range" class="form-range" id="customRange" step="10" name="points">
           <label for="customRange" class="form-label text-white">Wisdom</label>
           <input type="range" class="form-range" id="customRange" step="10" name="points">
-          
-          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </div>
+
+      <div class="container mt-3">
+        <p class="text-primary" style="font-size: 22px;">Your info</p>      
+        <form action="/action_page.php">
+          <div class="input-group mb-3">
+            <span class="input-group-text">@playername</span>
+            <input type="text" class="form-control" placeholder="Username" name="usrname">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your Email" name="email">
+            <span class="input-group-text">@example.com</span>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
 
