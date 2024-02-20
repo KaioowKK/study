@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+
+<head>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+
+</head>
 <html>
 <body>
 
@@ -9,6 +19,12 @@
 <p id="demo" style="display:none">Hello JavaScript!</p>
 
 <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
 
 </body>
 </html> 
