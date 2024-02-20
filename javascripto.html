@@ -22,6 +22,30 @@
 
 <button onclick="window.print()">Clico = Salvo :3</button>
 
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+</script>
+
+<p id="calculatoh"></p>
+
+<script>
+let x, y, z;  
+x = 5;        
+y = 6;        
+z = x + y;    
+
+document.getElementById("calculatoh").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+
 </body>
 </html> 
 
@@ -30,6 +54,16 @@
   window.alert()
   console.log()
   window.print()
+
+  var	            Declares a variable
+  let	            Declares a block variable
+  const	          Declares a block constant
+  if	            Marks a block of statements to be executed on a condition
+  switch	        Marks a block of statements to be executed in different cases
+  for	            Marks a block of statements to be executed in a loop
+  function	      Declares a function
+  return	        Exits a function
+  try	            Implements error handling to a block of statements *****
 
 
 
