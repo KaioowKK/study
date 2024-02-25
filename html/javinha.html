@@ -11,14 +11,36 @@
 <body>
 
   <p>JavaScript : from left to right </p>
-
   <p id="volvoex"></p>
   
   <script>
-  let v = "Volvo" + 16 + 4;
-  document.getElementById("volvox").innerHTML = v;
+  let v = "volvo" + 16 + 4;
+  document.getElementById("volvoex").innerHTML = v;
   </script>
+
+  <p>---------------------------------------</p>
+
+  <p>JavaScript : car index 0 below </p>
+  <p id="cars123"></p>
+
+  <script>
+  const cars = ["Saab","Volvo","BMW"];
+  document.getElementById("cars123").innerHTML = cars[0];
+  </script>
+
+  <p>---------------------------------------</p>
   
+  <p>JS variable</p>
+  <p id="demotemp"></p>
+
+  <script>
+  let text = "The temperature is " + toCelsius(77) + " Celsius.";
+  document.getElementById("demotemp").innerHTML = text;
+
+  function toCelsius(fahrenheit) { return (5/9) * (fahrenheit-32); } 
+  </script>
+
+  <p>---------------------------------------</p>
 
 
 
