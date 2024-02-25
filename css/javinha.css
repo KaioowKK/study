@@ -1,0 +1,60 @@
+
+body {
+    background-image: url("../img/OceanAbyss.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: calibri, arial;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.default-text {
+    text-shadow: none;
+    font-size: 17px;
+    color: azure;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif
+}
+
+.default-text-big {
+    font-size: 23px;
+    color: azure;
+    text-align: center;
+}
+
+.default-title {
+    font-size: 23px;
+    color: azure;
+}
+
+.charsubmenu {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+  
+.charsubmenu a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.charsubmenu a:hover {
+    text-decoration: none;
+    color: #0026ff;
+}
