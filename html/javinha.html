@@ -71,6 +71,23 @@
   document.getElementById("demostri").innerHTML = text.padStart(4,0);
   </script>
 
+  <p>---------------------------------------</p>
+
+  <p id="demotems"></p>
+
+  <p>Templates are not supported in Internet Explorer.</p>
+
+  <script>
+  let header = "Template Strings";
+  let tags = ["template strings", "javascript", "es6"];
+
+  let html = `<h2>${header}</h2><ul>`;
+
+  for (const x of tags) { html += `<li>${x}</li>`; }
+
+  html += `</ul>`;
+  document.getElementById("demotems").innerHTML = html;
+  </script>
 
 
 
