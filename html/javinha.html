@@ -131,6 +131,19 @@
   document.getElementById("democop").innerHTML = fruits.copyWithin(2,0,2);
   </script>
 
+  <p>---------------------------------------</p>
+
+  <p>Esses e veri utiu porque sorteia os num</p>
+  <p id="demo1esses"></p>
+  <p id="demo2esses"></p>
+
+  <script>
+  const points = [40, 100, 1, 5, 25, 10];
+  document.getElementById("demo1esses").innerHTML = points;
+
+  points.sort(function(a, b){return b - a});
+  document.getElementById("demo2esses").innerHTML = points;
+  </script>
 
 
 
