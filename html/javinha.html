@@ -145,6 +145,29 @@
   document.getElementById("demo2esses").innerHTML = points;
   </script>
 
+  <p>---------------------------------------</p>
+
+  <p>Finarmenti nas parti que começa a ficar xisdezinho</p>
+
+  <button onclick="myFunction1()">Sortear Alphabetically</button>
+  <button onclick="myFunction2()">Sortidos Numerically</button>
+
+  <p id="sorter"></p>
+
+  <script>
+  const sortidos = [40, 100, 1, 5, 25, 10];
+  document.getElementById("sorter").innerHTML = sortidos;  
+
+  function myFunction1() {
+    sortidos.sort();
+    document.getElementById("sorter").innerHTML = sortidos;
+  }
+  function myFunction2() {
+    sortidos.sort(function(a, b){return a - b});
+    document.getElementById("sorter").innerHTML = sortidos;
+  }
+  </script>
+
 
 
 
