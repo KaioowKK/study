@@ -31,6 +31,7 @@
   <p>---------------------------------------</p>
   
   <p>JS variable temperatura</p>
+  <p>esse era lascado farenhaiti e viro celsos</p>
   <p id="demotemp"></p>
 
   <script>
@@ -168,7 +169,20 @@
   }
   </script>
 
+  <p>---------------------------------------</p>
 
+  <p>The every() checa se ta acima os numbero</p>
+
+  <p id="democheck"></p>
+
+  <script>
+  const numbers = [45, 4, 9, 16, 25];
+  let allOver18 = numbers.every(myFunction);
+
+  document.getElementById("democheck").innerHTML = "All over 18 is " + allOver18;
+
+  function myFunction(value) { return value > 18; }
+  </script>
 
 
 <!--
