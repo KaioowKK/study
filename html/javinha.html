@@ -209,6 +209,14 @@ const d = new Date(2018, 11, 24, 10, 33, 30);
 document.getElementById("demoho").innerHTML = d;
 </script>
 
+<p>The time zone difference in minutes is:</p>
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.getTimezoneOffset();
+</script>
+
 
 
 
