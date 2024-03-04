@@ -254,6 +254,20 @@ function myFunction() {
 }
 </script>
 
+<p id="demoiff"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demoiff").innerHTML = greeting;
+</script>
 
 <!--
 <p id="demo" style="display:none">Erupção de Ferroadas!</p>
