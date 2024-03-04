@@ -217,6 +217,16 @@ const dx = new Date();
 document.getElementById("demoxx").innerHTML = dx.getTimezoneOffset();
 </script>
 
+<button onclick="document.getElementById('demoramm').innerHTML = getRndInteger(1,10)">Click Me</button>
+
+<p id="demoramm"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
 
 
 
