@@ -310,7 +310,19 @@ while (carsifla[iifla]) {
   iifla++;
 }
 
-document.getElementById("demoifla").innerHTML = text;
+document.getElementById("demoifla").innerHTML = textbreak;
+</script>
+
+<p id="demobreak"></p>
+
+<script>
+let textbreak = "";
+for (let ibreak = 0; i < 10; ibreak++) {
+  if (ibreak === 3) { break; }
+  textbreak += "The number is " + ibreak + "<br>";
+}
+
+document.getElementById("demobreak").innerHTML = textbreak;
 </script>
 
 <!--
