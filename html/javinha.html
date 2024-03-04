@@ -235,6 +235,25 @@ let y = new Boolean(false);  // y is an object
 document.getElementById("demoEAr").innerHTML = (x==y);
 </script>
 
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demoage"></p>
+
+<script>
+function myFunction() {
+  let voteable;
+  let age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "Input is not a number";
+  } else {
+    voteable = (age < 18) ? "Too young" : "Old enough";
+  }
+  document.getElementById("demoage").innerHTML = voteable + " to vote";
+}
+</script>
+
 
 <!--
 <p id="demo" style="display:none">Erupção de Ferroadas!</p>
