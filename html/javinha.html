@@ -412,6 +412,24 @@ yhoisting = 7;   // Assign 7 to y
 let public = 1500;   // This will cause an error 
 </script>
 
+<button id="btn">Click Me!</button>
+
+<p id="demoarrow"></p>
+
+<script>
+let hello = "";
+
+hello = () => {
+  document.getElementById("demoarrow").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+
 <!--
 <p id="demo" style="display:none">Erupção de Ferroadas!</p>
 
