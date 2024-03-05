@@ -430,6 +430,27 @@ window.addEventListener("load", hello);
 document.getElementById("btn").addEventListener("click", hello);
 </script>
 
+<p id="democlas"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+const date = new Date();
+let year = date.getFullYear();
+
+const myCar = new Car("Ford", 2014);
+document.getElementById("democlas").innerHTML=
+"My car is " + myCar.age(year) + " years old.";
+</script>
+
 <!--
 <p id="demo" style="display:none">Erupção de Ferroadas!</p>
 
