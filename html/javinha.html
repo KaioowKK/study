@@ -392,6 +392,19 @@ function myFunction() {
 }
 </script>
 
+<p id="demohoisting"></p>
+
+<script>
+var xhoisting = 5; // Initialize x
+var yhoisting;   // Declare y
+
+elem = document.getElementById("demohoisting"); // Find an element 
+elem.innerHTML = xhoisting + " " + yhoisting;       // Display x and y
+
+yhoisting = 7;   // Assign 7 to y
+
+</script>
+
 <!--
 <p id="demo" style="display:none">Erupção de Ferroadas!</p>
 
