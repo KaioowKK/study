@@ -336,6 +336,16 @@ typeof false + "<br>" +
 typeof xtof;
 </script>
 
+<p id="p01x">The best things in life are free!</p>
+
+<p id="demop01x"></p>
+
+<script>
+let textp01x = document.getElementById("p01x").innerHTML;
+const pattern = /e/;
+document.getElementById("demop01x").innerHTML = pattern.test(textp01x);
+</script>
+
 <!--
 <p id="demo" style="display:none">Erupção de Ferroadas!</p>
 
