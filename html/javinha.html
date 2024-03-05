@@ -380,6 +380,18 @@ function myFunction() {
 }
 </script>
 
+<p id="demoglob"></p>
+
+<script>
+myFunction();
+// code here can use carName as a global variable
+document.getElementById("demoglob").innerHTML = "I can display " + carNameglob;
+
+function myFunction() {
+  carNameglob = "Volvo";
+}
+</script>
+
 <!--
 <p id="demo" style="display:none">Erupção de Ferroadas!</p>
 
