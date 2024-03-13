@@ -47,3 +47,11 @@ const person = {
       return this.firstName + " " + this.lastName;
     }
   };
+
+  const person = {
+    name: "John",
+    today: new Date()
+  };
+  
+  let myString = JSON.stringify(person);
+  document.getElementById("demo").innerHTML = myString;
