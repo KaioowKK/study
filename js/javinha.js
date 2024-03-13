@@ -127,3 +127,16 @@ letters.add("c");
 letters.add("c");
 letters.add("c");
 letters.add("c");
+
+// Create Objects
+const apples = {name: 'Apples'};
+const bananas = {name: 'Bananas'};
+const oranges = {name: 'Oranges'};
+
+// Create a Map
+const fruits = new Map();
+
+// Add new Elements to the Map
+fruits.set(apples, 500);
+fruits.set(bananas, 300);
+fruits.set(oranges, 200);
