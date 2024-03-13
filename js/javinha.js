@@ -8,3 +8,7 @@ if (time < 20) {
   } else {
     greeting = "Good evening";
   }
+
+  let x = 0.1;
+  let y = 0.2;
+  let z = x + y            // the result in z will not be 0.3
