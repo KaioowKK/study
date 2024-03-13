@@ -29,3 +29,12 @@ const person = {
   
   document.getElementById("demo").innerHTML =
   person.firstName + " is " + person.age + " years old.";
+
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+  };
+  
+  delete person["age"];
