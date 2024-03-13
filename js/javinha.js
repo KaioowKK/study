@@ -19,6 +19,3 @@ person["lastName"] = "Doe";
 person["age"] = 46;
 person.length;      // person.length will return 0
 person[0];          // person[0] will return undefined
-
-let l = arr.length;
-for (let i = 0; i < l; i++)
