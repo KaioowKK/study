@@ -317,3 +317,7 @@ function myMove() {
     }
   }
 }
+
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
