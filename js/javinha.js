@@ -187,3 +187,17 @@ const myObj = new myFunction("John", "Doe");
 
 // This will return "John"
 myObj.firstName;
+
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person1 = {
+  firstName: "Mary",
+  lastName: "Doe"
+}
+
+// This will return "Mary Doe":
+person.fullName.apply(person1);
