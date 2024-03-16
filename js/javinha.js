@@ -261,3 +261,14 @@ document.getElementById("demo").innerHTML = Car.hello();
 // But NOT on a Car Object:
 // document.getElementById("demo").innerHTML = myCar.hello();
 // this will raise an error.
+
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
