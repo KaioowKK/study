@@ -324,3 +324,11 @@ function changeText(id) {
 
 document.getElementById("id02").innerHTML = 
 document.getElementById("id01").childNodes[0].nodeValue;
+
+const para = document.createElement("p");
+const node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+const element = document.getElementById("div1");
+const child = document.getElementById("p1");
+element.insertBefore(para, child);
