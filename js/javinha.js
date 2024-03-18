@@ -353,3 +353,8 @@ myPromise.then(
   function(value) {myDisplayer(value);},
   function(error) {myDisplayer(error);}
 );
+
+const myCollection = document.getElementsByTagName("p");
+for (let i = 0; i < myCollection.length; i++) {
+  myCollection[i].style.color = "red";
+}
