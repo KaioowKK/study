@@ -372,3 +372,7 @@ if (confirm("Press a button!")) {
 } else {
   txt = "You pressed Cancel!";
 }
+
+function myFunction() {
+  alert('Hello');
+}
