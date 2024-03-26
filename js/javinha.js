@@ -360,3 +360,7 @@ for (let i = 0; i < myCollection.length; i++) {
 }
 
 const myNodeList = document.querySelectorAll("p");
+
+function goForward() {
+  window.history.forward()
+}
