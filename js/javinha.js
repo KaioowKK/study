@@ -364,3 +364,5 @@ const myNodeList = document.querySelectorAll("p");
 function goForward() {
   window.history.forward()
 }
+
+document.getElementById("demo").innerHTML = navigator.javaEnabled();
