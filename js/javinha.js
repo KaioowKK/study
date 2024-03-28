@@ -576,3 +576,12 @@ person = {name:"John", age:31, city:"New York"};
 </employees>
 
 */
+
+const texter = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(texter, function (key, value) {
+  if (key == "birth") {
+    return new Date(value);
+  } else {
+    return value;
+  }
+});
