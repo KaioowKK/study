@@ -409,3 +409,5 @@ function myFunction() {
 function myFunction() {
   window.history.go(-2);
 }
+
+sessionStorage.setItem("namex", "John Doex");
