@@ -599,3 +599,11 @@ document.getElementById("demoS").innerHTML = obj.name;
 const myJSONX = '{"name":"John", "age":30, "car":null}';
 const myObjX = JSON.parse(myJSONX);
 x = myObjX.name;
+
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+};
+xmlhttp.open("GET", "json_demo.txt");
+xmlhttp.send();
