@@ -627,7 +627,20 @@ xmlhttp.onload = function() {
   text += "</select>"
   document.getElementById("demo").innerHTML = text;
   }
-  
+
 xmlhttp.open("POST", "json_demo_html_table.php", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send("x=" + dbParam);
+
+const obj = { table: "products", limit: 10 };
+let s = document.createElement("script");
+s.src = "jsonp_demo_db.php?x=" + JSON.stringify(obj);
+document.body.appendChild(s);
+
+function myFunc(myObj) {
+  let txt = "";
+  for (let x in myObj) {
+    txt += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
