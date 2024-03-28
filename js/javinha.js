@@ -554,3 +554,5 @@ function displayCD(i) {
   "<br>Year: " +
   cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
 }
+
+person = {name:"John", age:31, city:"New York"};
