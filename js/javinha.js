@@ -480,3 +480,6 @@ document.getElementById("demo").innerHTML = txt;
 
 xhttp.open("GET", "cd_catalog.xml");
 xhttp.send();
+
+xhttp.open("GET", "demo_get.asp?t=" + Math.random());
+xhttp.send();
