@@ -405,3 +405,7 @@ function myFunction() {
     document.getElementById("demo").innerHTML = inpObj.validationMessage;
   }
 }
+
+function myFunction() {
+  window.history.go(-2);
+}
