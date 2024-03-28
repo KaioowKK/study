@@ -585,3 +585,13 @@ const obj = JSON.parse(texter, function (key, value) {
     return value;
   }
 });
+
+// Storing data:
+const myObjS = {name: "John", age: 31, city: "New York"};
+const myJSON = JSON.stringify(myObjS);
+localStorage.setItem("testJSON", myJSON);
+
+// Retrieving data:
+let textS = localStorage.getItem("testJSON");
+let obj = JSON.parse(textS);
+document.getElementById("demoS").innerHTML = obj.name;
