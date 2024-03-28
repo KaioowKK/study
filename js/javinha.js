@@ -595,3 +595,7 @@ localStorage.setItem("testJSON", myJSON);
 let textS = localStorage.getItem("testJSON");
 let obj = JSON.parse(textS);
 document.getElementById("demoS").innerHTML = obj.name;
+
+const myJSONX = '{"name":"John", "age":30, "car":null}';
+const myObjX = JSON.parse(myJSONX);
+x = myObjX.name;
