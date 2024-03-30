@@ -644,3 +644,5 @@ function myFunc(myObj) {
   }
   document.getElementById("demo").innerHTML = txt;
 }
+
+myElements = document.querySelectorAll("p.intro");
