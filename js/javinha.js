@@ -665,3 +665,18 @@ for (let i = 0; i < xArray.length-1; i++) {
   ctx.ellipse(x, y, 2, 3, 0, 0, Math.PI * 2);
   ctx.fill();
 }
+
+const xArrayS = [55, 49, 44, 24, 15];
+const yArrayS = ["Italy","France","Spain","USA","Argentina"];
+
+const data = [{
+  x: xArrayS,
+  y: yArrayS,
+  type: "bar",
+  orientation: "h",
+  marker: {color:"rgba(255,0,0,0.6)"}
+}];
+
+const layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot", data, layout);
