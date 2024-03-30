@@ -650,3 +650,5 @@ myElements = document.querySelectorAll("p.intro");
 content = myElement.html();
 
 myElement.hide();
+
+myParent = $("#02").parent().prop("nodeName"); ;
