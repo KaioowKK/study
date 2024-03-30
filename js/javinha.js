@@ -646,3 +646,5 @@ function myFunc(myObj) {
 }
 
 myElements = document.querySelectorAll("p.intro");
+
+content = myElement.html();
