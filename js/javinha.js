@@ -680,3 +680,20 @@ const data = [{
 const layout = {title:"World Wide Wine Production"};
 
 Plotly.newPlot("myPlot", data, layout);
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production"
+    }
+  }
+});
