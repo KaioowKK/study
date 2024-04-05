@@ -49,3 +49,18 @@ nameAgeMap.Jack = 25; // no error
 //nameAgeMap.Markyxs = "Fifty"; // Error: Type 'string' is not assignable to type 'number'.
 
 console.log(nameAgeMap);
+
+enum CardinalDirections {
+  North = 1,
+  East,
+  South,
+  West
+}
+// logs 1
+console.log(CardinalDirections.North);
+// logs 4
+console.log(CardinalDirections.West);
+// log 2
+console.log(CardinalDirections.East);
+// log 3
+console.log(CardinalDirections.South);
