@@ -41,3 +41,11 @@ ourTuple = [5, false, 'Coding God was here'];
 ourTuple.push('Something new and wrong');
 
 console.log(ourTuple);
+
+const nameAgeMap: { [index: string]: number } = {};
+
+nameAgeMap.Jack = 25; // no error
+
+//nameAgeMap.Markyxs = "Fifty"; // Error: Type 'string' is not assignable to type 'number'.
+
+console.log(nameAgeMap);
