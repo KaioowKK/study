@@ -90,3 +90,8 @@ function printStatusCode(code: string | number) {
   console.log(`My status code is ${code.toUpperCase()}.`) // error: Property 'toUpperCase' does not exist ontype 'string | number'.
   Property 'toUpperCase' does not exist on type 'number'
 }
+
+// the `?` operator here marks parameter `c` as optional
+function add(a: number, b: number, c?: number) {
+  return a + b + (c || 0);
+}
