@@ -149,3 +149,6 @@ type StringMap = { [key: string]: unknown };
 function createStringPair(property: keyof StringMap, value: string): StringMap {
   return { [property]: value };
 }
+
+let array: number[] = [1, 2, 3];
+let value = array[0]; // with `noUncheckedIndexedAccess` this has the type `number | undefined`
