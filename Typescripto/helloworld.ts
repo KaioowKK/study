@@ -87,8 +87,7 @@ const car: Car = {
 console.log(car);
 
 function printStatusCode(code: string | number) {
-  console.log(`My status code is ${code.toUpperCase()}.`) // error: Property 'toUpperCase' does not exist ontype 'string | number'.
-  Property 'toUpperCase' does not exist on type 'number'
+  
 }
 
 // the `?` operator here marks parameter `c` as optional
@@ -98,3 +97,15 @@ function add(a: number, b: number, c?: number) {
 
 let x = 'hello';
 console.log(((x as unknown) as number).length); // x is not actually a number so this will return undefined
+
+class Person {
+  // name is a private member variable
+  public constructor(private name: string) {}
+
+  public getName(): string {
+    return this.name;
+  }
+}
+
+const person = new Person("Jane");
+console.log(person.getName());
