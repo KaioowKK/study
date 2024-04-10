@@ -131,3 +131,15 @@ class NamedValue<T> {
 let value = new NamedValue<number>('myNumber');
 value.setValue(10);
 console.log(value.toString()); // myNumber: 10
+
+interface Car {
+  make: string;
+  model: string;
+  mileage?: number;
+}
+
+let myCar: Required<Car> = {
+  make: 'Ford',
+  model: 'Focus',
+  mileage: 12000 // `Required` forces mileage to be defined
+};
