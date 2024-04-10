@@ -143,3 +143,9 @@ let myCar: Required<Car> = {
   model: 'Focus',
   mileage: 12000 // `Required` forces mileage to be defined
 };
+
+type StringMap = { [key: string]: unknown };
+// `keyof StringMap` resolves to `string` here
+function createStringPair(property: keyof StringMap, value: string): StringMap {
+  return { [property]: value };
+}
