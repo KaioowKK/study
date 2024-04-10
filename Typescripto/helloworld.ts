@@ -95,3 +95,6 @@ function printStatusCode(code: string | number) {
 function add(a: number, b: number, c?: number) {
   return a + b + (c || 0);
 }
+
+let x = 'hello';
+console.log(((x as unknown) as number).length); // x is not actually a number so this will return undefined
