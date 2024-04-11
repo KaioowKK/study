@@ -96,7 +96,7 @@ function add(a: number, b: number, c?: number) {
 }
 
 let x = 'hello';
-console.log(((x as unknown) as number).length); // x is not actually a number so this will return undefined
+console.log(((x as unknown) as number)); // x is not actually a number so this will return undefined
 
 class Person {
   // name is a private member variable
@@ -132,17 +132,12 @@ let value = new NamedValue<number>('myNumber');
 value.setValue(10);
 console.log(value.toString()); // myNumber: 10
 
-interface Car {
+interface Cary {
   make: string;
   model: string;
   mileage?: number;
 }
 
-let myCar: Required<Car> = {
-  make: 'Ford',
-  model: 'Focus',
-  mileage: 12000 // `Required` forces mileage to be defined
-};
 
 type StringMap = { [key: string]: unknown };
 // `keyof StringMap` resolves to `string` here
@@ -151,4 +146,9 @@ function createStringPair(property: keyof StringMap, value: string): StringMap {
 }
 
 let array: number[] = [1, 2, 3];
-let value = array[0]; // with `noUncheckedIndexedAccess` this has the type `number | undefined`
+
+type Color = "red" | "green" | "blue";
+type HexColor<T extends Color> = `#${string}`;
+
+// Usage:
+let myColor: HexColor<"blue"> = "#0000FF";
